@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Hunt - Start</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="start-page">
+
+    <div class="container">
+        <h1>Pixel Hunt</h1>
+        <p class="subtitle">Choose difficulty and pixel color to start the game</p>
+
+        <div class="card">
+            <h2>Choose difficulty</h2>
+            <div class="options difficulty-options">
+                <label>
+                    <input type="radio" name="difficulty" value="easy">
+                    Easy
+                </label>
+                <label>
+                    <input type="radio" name="difficulty" value="normal">
+                    Normal
+                </label>
+                <label>
+                    <input type="radio" name="difficulty" value="hard">
+                    Hard
+                </label>
+                <label>
+                    <input type="radio" name="difficulty" value="superhard">
+                    Super Hard
+                </label>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Choose pixel color</h2>
+            <div class="options color-options">
+                <label>
+                    <input type="radio" name="color" value="#ff4d4d">
+                    Red
+                </label>
+                <label>
+                    <input type="radio" name="color" value="#4d94ff">
+                    Blue
+                </label>
+                <label>
+                    <input type="radio" name="color" value="#33cc66">
+                    Green
+                </label>
+                <label>
+                    <input type="radio" name="color" value="#ffd11a">
+                    Yellow
+                </label>
+            </div>
+        </div>
+
+        <button id="startBtn" disabled>Start Game</button>
+        <p id="startMessage" class="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

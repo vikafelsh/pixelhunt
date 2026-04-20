@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Hunt - Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="game-page">
+
+    <div class="game-wrapper">
+        <div class="hud" id="hud">
+            <div>Score: <span id="score">0</span></div>
+            <div>Time left: <span id="timeLeft">0.00</span>s</div>
+            <div>Difficulty: <span id="difficultyLabel">-</span></div>
+        </div>
+
+        <div id="gameArea">
+            <div id="pixel"></div>
+
+            <div id="gameOverMessage" class="game-over hidden">
+                <h2>Game Over!</h2>
+                <p>Your score: <span id="finalScore">0</span></p>
+                <p>Refresh page to return to start page</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

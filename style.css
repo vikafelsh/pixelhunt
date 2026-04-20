@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #222;
+}
+
+.start-page,
+.game-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    background: white;
+    padding: 25px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+.message {
+    margin-top: 10px;
+    color: red;
+    min-height: 20px;
+}
+
+.game-wrapper {
+    width: 900px;
+}
+
+.hud {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#gameArea {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: white;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+#pixel {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+.game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+}
